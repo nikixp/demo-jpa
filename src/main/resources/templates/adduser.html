@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div>Add user</div>
+        <form action="#" th:action="@{/adduser}" th:object="${adduser}" method="post">
+            <p>username: <input type="text" th:field="*{username}" /></p>
+            <p>email: <input type="text" th:field="*{email}" /></p>
+            <p><input type="submit" value="Add user" /> <input type="reset" value="Reset" /></p>
+        </form>
+    </body>
+</html>
